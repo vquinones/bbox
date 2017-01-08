@@ -79,14 +79,13 @@ DATABASES = {
     'default': {
         'ENGINE': os.environ.get('DATABASE_ENGINE',
                                  'django.db.backends.postgresql_psycopg2'),
-        'NAME': os.environ.get('DATABASE_NAME', 'python'),
-        'USER': os.environ.get('DATABASE_USER', 'adminy1ufgge'),
-        'PASSWORD': os.environ.get('DATABASE_PASSWORD', 't6rgXtQ_8pHQ'),
-        'HOST': os.environ.get('OPENSHIFT_POSTGRESQL_DB_HOST', 'localhost'),
-        'PORT': os.environ.get('OPENSHIFT_POSTGRESQL_DB_PORT', '5432'),
+        'NAME': os.environ.get('DATABASE_NAME', 'd8danuvf6fr4uv'),
+        'USER': os.environ.get('DATABASE_USER', 'evabyesqagafbb'),
+        'PASSWORD': os.environ.get('DATABASE_PASSWORD', '069e34dcd6c75bd0879ac95da754453839dd286ae75576a615deda27901d9f0f'),
+        'HOST': os.environ.get('DATABASE_HOST', 'ec2-184-73-222-194.compute-1.amazonaws.com'),
+        'PORT': os.environ.get('DATABASE_PORT', '5432'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
