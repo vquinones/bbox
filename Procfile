@@ -1,1 +1,2 @@
-web: run-program gunicorn scms.wsgi:application --log-file -
+web: gunicorn scms.wsgi:application --log-file -
+
