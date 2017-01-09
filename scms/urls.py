@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.conf.urls.static import static
+from scms.settings import STATIC_ROOT, STATIC_URL
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-]
+] + static(STATIC_URL, document_root=STATIC_ROOT)
